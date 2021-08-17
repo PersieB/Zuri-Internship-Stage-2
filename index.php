@@ -16,7 +16,7 @@
     <!-- Container for having the form structure -->
     <div class="forms">
         <h2 id="p">PROFILE</h2>
-        <form id = "cv" method="post" action="cv.html">
+        <form id = "cv" method="post" action="cv.php">
             <!-- First name -->
             <div class="fields">
                 <label for="first">First *</label><br><br>
