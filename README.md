@@ -1,9 +1,13 @@
-# A MODEL ASHESI CV TEMPLATE
+# AN INTERACTIVE RESUME TEMPLATE
 Author @Percy Brown
-Date: 22/09/2020.
+Date: 17/08/2021.
+
+Task by: https://training.zuri.team/
+![zuri](https://user-images.githubusercontent.com/53563761/129732010-bb269341-690d-4d00-ac10-95aab6911572.png)
+
 
 # Program
-The program models the Ashesi CV template. The profile section of the CV remains blank initially, waiting to be filled by user details upon submission of a form. The other sections of the CV have fixed content.
+The program models a resume template. The profile section of the CV remains blank initially, waiting to be filled by user details upon submission of a form. The other sections of the CV have fixed content.
 
 The program performs validations during the form filling. The form includes fields for:
 First Name - required
