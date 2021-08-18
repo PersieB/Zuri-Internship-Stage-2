@@ -7,15 +7,10 @@ Task by: https://training.zuri.team/
 
 
 # Program
-The program models a resume template. The profile section of the CV remains blank initially, waiting to be filled by user details upon submission of a form. The other sections of the CV have fixed content.
+The program models my sample resume. 
+A link to contact me is at the top and bottom of my resume page
+Mailtrap testing tool was used to ensure that emails were successfully sent. Below are a few screenshots
 
-The program performs validations during the form filling. The form includes fields for:
-First Name - required
-Middle Name(s)
-Last Name - required
-Address / Location - required
-Phone number - required
-Email - required
-Gender - required
+![Screenshot (343)](https://user-images.githubusercontent.com/53563761/129941493-7523b4b6-6020-4e9c-b252-75bd88316404.png)
+![Screenshot (345)](https://user-images.githubusercontent.com/53563761/129941555-6439dc76-3e35-445d-9c51-419707652e6d.png)
 
-The window stores the data provided by the user using the Javascript local storage feature  and redirects the page to view the CV template.
