@@ -1,5 +1,4 @@
-![Screenshot (346)](https://user-images.githubusercontent.com/53563761/129941839-def628b0-aaec-4226-8849-aecf5fa45c0f.png)
-![Screenshot (346)](https://user-images.githubusercontent.com/53563761/129941858-9d30f435-e84d-4d63-8bb7-fb637bc83467.png)
+
 # AN INTERACTIVE RESUME TEMPLATE
 Author @Percy Brown
 Date: 17/08/2021.
