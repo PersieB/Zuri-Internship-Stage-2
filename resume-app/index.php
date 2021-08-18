@@ -1,83 +1,168 @@
-<!-- This program creates a form to be filled by users to enable them view the Ashesi CV template -->
+
+<!-- This program creates the Ashesi CV Template-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile form</title>
+    <title>CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<!-- Ashesi CV Template Profile Form-->
-<body onload="defaultFocus();">   <!-- Browser focus on the first name when the page is loaded -->
-    <h2>My stage 2 task for <a href="https://training.zuri.team/" target="_blank">Zuri Internship</a></h2>
-    <img src="zuri.png" class="center">
-    <h2>Provide your Contact details to create a Template Resume</h2>
+<body>
+    <!-- Profile section (to be filled by user form data)-->
+    <div class="container">
+        <div class="profile-section">
+            <p><a href="contact.php">CONTACT ME</a></p>
+            <p id="name"><span> PERCY BROWN </span></p>
+            <p id="gender">MALE</p>
+            <p id="address">ACCRA, GHANA.</p>
+            <p id="phone">+233277776087 / +233543814371</p>
+            <p id="mail">persiebrown285@gmail.com</p>
+        </div>
+        <!-- Education-->
+        <div id="education">
+            <h3>EDUCATION</h3>
+            <hr>
+            <span id="left"><b>Ashesi University<br>BSc. Computer Science</b><br><br></span>
+            <span id="right"><b>Eastern Region, Ghana<br>Expected date of graduation: June 2022</b><br><br></span>
 
-    <!-- Container for having the form structure -->
-    <div class="forms">
-        <h2 id="p">PROFILE</h2>
-        <form id = "cv" method="post" action="cv.php">
-            <!-- First name -->
-            <div class="fields">
-                <label for="first">First *</label><br><br>
-                <input type="text" id="first" name="f_name" placeholder="first name" class="forms"
-                onblur="validateFirstName(this)"><br>
-                <span id="fstatus" class="error"></span><br><br>
-            <!-- Middle names -->
-            </div>
-            <div class="fields">
-                <label for="middle">Other(s)</label><br><br>
-                <input type ="text" id="middle" name="m_name" placeholder="middle name(s)" class="forms" 
-                onblur="validateMiddleName(this)"><br>
-                <span id="mstatus" class="error"></span><br><br>
-            </div>
-            <!-- Last name -->
-            <div class="fields">
-                <label for="last">Last *</label><br><br>
-                <input type="text" id="last" name="l_name" placeholder="last name" class="forms" 
-                onblur="validateLastName(this)"><br>
-                <span id="lstatus" class="error"></span><br><br>
-            </div>
-            <!-- Address - location -->
-            <div class="fields">
-                <label for="address">Address(Location) *</label><br><br>
-                <input type="text" id="address" name="address" placeholder="region, Country" class="forms" onblur="validateAddress(this)"><br>
-                <span id="astatus" class="error"></span><br><br>
-            </div>
-            <!-- Phone number -->
-            <div class="fields">
-                <label for="phone">Primary Phone number *</label><br>
-                <span><i>Country code optional, spaces between numbers not allowed.</i></span><br><br>
-                <input type="tel" id="phone" name="phone" placeholder="+23327776087 or 0277776087" class="forms" 
-                onblur="validatePhone(this)"><br>
-                <span id="pstatus" class="error"></span><br><br>
-            </div>
-            <!-- Primary email address -->
-            <div class="fields">
-                <label for="email">Primary email *</label><br><br>
-                <input type="email" id="email" name="email" placeholder ="name@domain.com" class="forms" onblur="validateEmail(this)" required><br>
-                <span id="estatus" class="error"></span><br><br>
-            </div>
-            <!-- Gender -->
-            <div class="fields">
-                <label for="gender">Gender *</label><br><br>
-                <select id="gender" name="gender" class="forms" required>
-                <option value="" >--Choose Gender--</option>
-                <option  value="Male">Male</option>
-                <option  value="Female">Female</option>
-                </select><br>
-                <span id="gstatus" class="error"></span><br><br>
-            </div>
-            <!-- Submit button -->
-            <button id="cvForm" type="submit" value="subform">SUBMIT FORM</button>
-        </form>
+            <span id="left"><b>University of Pennsylvania<br>Computational Science Programme</b><br><br></span>
+            <span id="right"><b>Pennsylvania, U.S.A<br>May - July 2020</b><br><br></span>
+
+            <span id="left"><b>St. Augustine's College<br>*BUSINES (WASSCE)</b></span>
+            <span id="right"><b>Central Region, Ghana<br>September 2014 - June 2017</b></span> 
+        </div>
+        <br>
+        <!-- Achievements and Awards-->
+        <div id="awards">
+            <h3 id="special_style">ACHIEVEMENTS/AWARDS</h3>
+            <hr>
+            <span id="left"><b>The MasterCard Foundation Scholarship Program,</b> Ashesi University<br><br></span>
+            <span id="right"><b>2018 - 2022</b><br><br></span>
+
+            <span id="left"><b>Dean's List,</b> Ashesi University<br><br></span>
+            <span id="right"><b>2018 - 2021</b><br><br></span>
+
+            <span id="left"><b>Certificate, Best Performance in WASSCE 2017,</b> St. Augustine's College<br></span>
+            <span id="right"><b>March 2018</b><br></span>
+        </div>
+        <!-- Work experience-->
+        <div id="work">
+            <h3>WORK EXPERIENCE</h3>
+            <hr>
+            <span id="left"><b>HNG- ZURI INTERNSHIP,</b><a href="https://training.zuri.team/" target="_blank">Zuri Training</a> <br></span>
+            <span id="right"><b>Present</b><br></span>
+            <span id="left"><b>Backend Developer</b>
+                <ul>
+                    <li>Improving upon my backend skills by working on hands on tasks.</li>
+                </ul>
+            </span>
+            <br><br>
+            <span id="left"><b>NEXTi2i,</b> Ghana<br></span>
+            <span id="right"><b>Present</b><br></span>
+            <span id="left"><b>Research Support Intern</b>
+                <ul>
+                    <li>Conducted secondary research on all business and technological hubs in Ghana to create a network.</li>
+                    <li>Transcribed interviews by the hub owners into case studies for analysis.</li>
+                    <li>Developed Business Model Canvases using the transcribed interviews to track each hub’s business model.</li>
+                </ul>
+            </span>
+            <br><br>
+            <span id="left"><b>Ashesi University Design Lab,</b> Ghana<br></span>
+            <span id="right"><b>September 2017 - May 2018</b><br></span>
+            <span id="left"><b>Program Assistant Intern</b>
+                <ul>
+                    <li>Monitored progress of projects through weekly discussions of milestones with Project Leads.</li>
+                    <li>Reported performance of projects to the Project Coordinator for easy supervision.</li>
+                    <li>Provided logistics to Project Leads for project activities to run effectively.</li>
+                </ul>
+            </span>
+        </div>
+        <!-- Projects and Research-->
+        <div id="project">
+            <h3>PROJECTS AND RESEARCH</h3>
+            <hr>
+            <span id="left"><b>Elpidia Project</b><br></span>
+            <span id="right"><b>Present</b><br></span>
+            <span id="left"><b>Co-Lead</b>
+                <ul>
+                    <li>Designing an app that greatly eases the rather painstaking process of recording students’
+                        progress while encouraging every teacher to interact with technology.</li>
+                </ul>
+            </span>
+            <br><br>
+            <span id="left"><b>Terra DB Project</b><br></span>
+            <span id="right"><b>February 2020</b><br></span>
+            <span id="left"><b>Team Member</b>
+                <ul>
+                    <li>Designed a user interface in a team to aid in collecting information about observatories and
+                        “galamsey” events in Ghana using java, java Fx and MySql.</li>
+                </ul>
+            </span>
+            <br><br>
+            <span id="left"><b>DiscreteVille Project</b><br></span>
+            <span id="right"><b>December 2019</b><br></span>
+            <span id="left"><b>Team Member</b>
+                <ul>
+                    <li>Designed and implemented an algorithm to determine the transitive closure of any relation
+                        with the help of Warshall’s algorithm using python.</li>
+                </ul>
+            </span>
+            <br><br>
+            <span id="left"><b>Pizza Delivery System</b><br></span>
+            <span id="right"><b>May 2019</b><br></span>
+            <span id="left"><b>Team Member</b>
+                <ul>
+                    <li>Designed the front end of the website with a team to enable students order
+                        for pizza by delivery using html, css, javascript bootstrap, etc.</li> 
+                </ul>
+            </span>
+        </div>
+        <!-- Extra curricular activities-->
+        <div id="curricular">
+            <h3>CO - CURRICULAR ACTIVITIES</h3>
+            <hr>
+            <span id="left"><b>Developer Students Club, </b>Ashesi University<br></span>
+            <span id="right"><b>Present</b><br></span>
+            <span id="left"><b>Co-Lead</b>
+                <ul>
+                    <li>Assisting freshmen on tutorials during workshops.</li>
+                    <li>Coordinating end of semester projects.</li>
+                </ul>
+            </span>
+            <br><br>
+
+            <span id="left"><b>Math Center, </b>Ashesi University <br></span>
+            <span id="right"><b>Present</b><br></span>
+            <span id="left"><b>Tutor</b>
+                <ul>
+                    <li>Assisting freshman and fellow colleagues in solving mathematical problems.</li> 
+                </ul>
+            </span>
+        </div>
+        <!-- Skills -->
+        <div id="skills">
+            <h3>SKILLS</h3>
+            <hr>
+            <ul id="skill">  
+                <li>Programming & Markup Languages (Java, Python, JavaScript, C++, HTML & CSS)</li>
+                <li>Database Management, MySql</li>
+                <li>Secondary Research</li>
+                <li>Attention to detail</li>
+                <li>Commercial Awareness</li>
+            </ul>
+        </div>
+        <!-- References-->
+        <div id="reference">
+            <h3 class="title">REFERENCES</h3>
+            <hr>
+            <p id="ref1">Available upon request</p>
+            <p id="ref">*WASSCE - West African Senior Secondary Certificate Examination</p>
+            <p id="ref">*Dean's List - Awarded to students with GPA of 3.5 and above</p>      
+        </div>
+        <div class="profile-section">
+            <p><a href="contact.php">CONTACT ME</a></p>
+        </div>
     </div>
-    <!-- Javascript file for validation and data storage included. -->
-    <script src="storage.js"></script> 
 </body>
-
 </html>
-
-
-
-  
